@@ -34,6 +34,11 @@ public class Perseguir extends Algoritmo {
         // Output: vetor velocidade (apontando na direção encontrada) 
         //         limitado pela maxVelocidade (tangencial)
         // PS: não é necessário definir a rotação
+        
+        Vector3 coordAlvo = new Vector3(this.alvo.getObjetivo());
+        
+        output.velocidade = coordAlvo.sub(agente.posicao).nor().scl(this.maxVelocidade);
+        
         return output;
     }
 

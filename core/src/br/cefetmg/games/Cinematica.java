@@ -81,6 +81,8 @@ public class Cinematica extends ApplicationAdapter {
         agentes = new ArrayList<Agente>();
         Agente agente = novoAgente(posicaoAleatoria());
         agente.defineComportamento(perseguir);
+        Agente agente2 = novoAgente(posicaoAleatoria());
+        agente2.defineComportamento(fugir);
         novoAgente(posicaoAleatoria());
         novoAgente(posicaoAleatoria());
         novoAgente(posicaoAleatoria());
